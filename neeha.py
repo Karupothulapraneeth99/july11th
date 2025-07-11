@@ -2,6 +2,7 @@ from colorama import Fore, Style, init
 
 init(autoreset=True)
 
-name = "Neeha"
-# Bold and colored (e.g., yellow)
-print(Style.BRIGHT + Fore.YELLOW + name)
+names = [("Neeha", Fore.YELLOW), ("Chanti", Fore.CYAN)]
+
+for name, color in names:
+    print(Style.BRIGHT + color + name)
